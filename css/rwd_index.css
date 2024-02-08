@@ -168,7 +168,7 @@
     color: #2f3438;
     letter-spacing: -1px;
   }
-  #nav ul.community li a h3 {
+  #nav ul li a h3 {
     font-size: 14px;
     font-weight: 600;
   }
@@ -284,7 +284,7 @@
     background: #fff;
   }
   #nav .row {
-    padding: 0px;
+    padding: 0 10px;
     max-width: 1074px;
     font-family: "Noto Sans KR", sans-serif;
     display: flex;
@@ -292,14 +292,17 @@
     color: #2f3438;
     letter-spacing: -1px;
   }
-  #nav .row ul.community {
+  #nav .row ul {
     display: flex;
     flex: 1 0 25%;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
   }
-  #nav .row ul.community > li {
+  #nav .row ul.community {
+    justify-content: flex-start;
+  }
+  #nav .row ul > li {
     padding: 6px 6px;
     display: block;
     align-items: stretch;

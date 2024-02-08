@@ -32,18 +32,22 @@ $(document).ready(function () {
 
 $(".basic_cate ul li")
     .on("click", function () {
-        $(this).addClass("on").siblings().removeClass("on")
+        $(this).addClass("on").siblings().removeClass("on");
         let num = $(this).index();
-        $(this)
-            .parent()
-            .find("li")
+        $("#nav")
+            .find(".navholder")
+            .children()
             .eq(num)
             .addClass("on")
             .siblings()
-            .removeClass("on");
+            .removeClass("on")
+        $(".navholder")
+            .find("li:nth-child(1)")
+            .addClass("on")
+            .siblings()
+            .removeClass("on")           
     })
-
-$("ul.community li")
+$("#nav ul li")
     .on("click", function () {
         $(this).addClass("on").siblings().removeClass("on")
         let num = $(this).index();
@@ -55,7 +59,6 @@ $("ul.community li")
             .siblings()
             .removeClass("on");
     })
-
 $(".best_cate ul li")
     .on("click", function () {
         $(this).addClass("on").siblings().removeClass("on")
@@ -75,6 +78,8 @@ $('.depth2').not($(this).next('.depth2')).stop().slideUp(300);
 $(this).next('.depth2').stop().slideToggle(300);
 $('.any').not(this).removeClass('on');
 $(this).toggleClass('on');
+$(this).siblings().children("li:nth-child(1)").addClass("on")
+.siblings().removeClass("on")
 });
 });
 $('ul.depth2 > li')

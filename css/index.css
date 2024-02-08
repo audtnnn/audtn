@@ -44,6 +44,32 @@ ul.community > li.on::before {
   height: 2px; /* border-bottom의 높이 설정 */
   background-color: #35c5f0
 }
+ul.shopping li.on {
+  color: #35c5f0;
+  position: relative;
+}
+ul.shopping > li.on::before {
+  content: ""; /* 가상 요소에 내용 추가 */
+  position: absolute; /* 절대 위치 설정 */
+  bottom: 0; /* 아래쪽으로 정렬 */
+  left: 0; /* 왼쪽으로 정렬 */
+  width: 100%; /* 가로 폭을 100%로 설정 */
+  height: 2px; /* border-bottom의 높이 설정 */
+  background-color: #35c5f0
+}
+ul.int_life li.on {
+  color: #35c5f0;
+  position: relative;
+}
+ul.int_life > li.on::before {
+  content: ""; /* 가상 요소에 내용 추가 */
+  position: absolute; /* 절대 위치 설정 */
+  bottom: 0; /* 아래쪽으로 정렬 */
+  left: 0; /* 왼쪽으로 정렬 */
+  width: 100%; /* 가로 폭을 100%로 설정 */
+  height: 2px; /* border-bottom의 높이 설정 */
+  background-color: #35c5f0
+}
 /* header 구역 */
 #header {
   position: fixed;
@@ -429,9 +455,16 @@ input:focus {
   color: #2f3438;
   letter-spacing: -1px;
 }
-
-#nav .row ul.community {
+#nav .row .navholder {
   display: flex;
+  flex: 1 90%;
+  justify-content: space-between;
+}
+#nav .row ul.community.on {
+  display: flex;
+}
+#nav .row ul.community {
+  display: none;
   flex: 1 90%;
   justify-content: space-between;
 }
@@ -455,6 +488,58 @@ input:focus {
 #nav .row ul.community > li > a span.chevron_down_1 i {
   float: right;
 }
+
+#nav .row ul.shopping.on {
+  display: flex;
+}
+#nav .row ul.shopping {
+  display: none;
+  flex: 1;
+  justify-content: flex-start;
+}
+#nav .row ul.shopping > li {
+  padding: 12px 6px;
+  display: flex;
+  align-items: center;
+}
+#nav .row ul.shopping > li:hover {
+  color: #35c5f0;
+}
+#nav ul.shopping li a h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+#nav .row ul.shopping > li > a {
+  display: flex;
+  align-items: center;
+}
+
+
+#nav .row ul.int_life.on {
+  display: flex;
+}
+#nav .row ul.int_life {
+  display: none;
+  flex: 1;
+  justify-content: flex-start;
+}
+#nav .row ul.int_life > li {
+  padding: 12px 6px;
+  display: flex;
+  align-items: stretch;
+}
+#nav .row ul.int_life > li:hover {
+  color: #35c5f0;
+}
+#nav ul.int_life li a h3 {
+  font-size: 16px;
+  font-weight: 600;
+}
+#nav .row ul.int_life > li > a {
+  display: flex;
+  align-items: center;
+}
+
 
 #nav .row ul.community > li {
   position: relative;
