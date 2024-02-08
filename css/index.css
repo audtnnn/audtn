@@ -307,7 +307,7 @@ span.bar_arrow {
   flex: 1 40%;
   padding: 0 14px;
 }
-#header .row1 .search_info .searchbox:hover {
+#header .row1 .search_info .searchbox:hover i{
   background-color: #f7f9fa;
 }
 #header .row1 .search_info .searchbox:hover input {

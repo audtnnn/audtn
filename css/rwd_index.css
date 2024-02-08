@@ -228,6 +228,9 @@
     align-items: center;
     float: right;
   }
+  #header .row1 .search_info .searchbox:hover i{
+    background-color: none;
+  }
   #header .row1 .search_info .searchbox {
     display: inline-block;
     align-items: center;
@@ -455,6 +458,7 @@
   /* interior_review */
   .morearrow {
     display: block;
+    cursor: pointer;
   }
   #section .recommend_interior .recommend_text .more {
     color: #35c5f0;
