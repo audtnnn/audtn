@@ -2339,11 +2339,8 @@
             $(document).ready(function(){
             $('.any').on("click", function(){
             $('.depth2').not($(this).next('.depth2')).stop().slideUp(300);
-            // 클릭한 .depth2를 열거나 닫음
             $(this).next('.depth2').stop().slideToggle(300);
-            // 다른 .any에서 .on 클래스를 제거
             $('.any').not(this).removeClass('on');
-            // 클릭한 .any에게 .on 클래스를 토글
             $(this).toggleClass('on');
             });
             });
@@ -2367,10 +2364,12 @@
                 $('.bar_click').fadeIn(150)
                 $('.bar_click').addClass("on")
                 $('.darkbg').addClass("on")
+                $('.depth1 li').eq(0).find(".depth2").show()
             })
             $('.return_btn').on("click", function () {
                 $('.bar_click').fadeOut(150)
                 $('.darkbg').removeClass("on")
+                $('.depth2').slideUp()
             })
             //휠내릴때
             $(document).on('wheel', function (event) {
