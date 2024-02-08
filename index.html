@@ -1,0 +1,2399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ohou.se</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+            integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/rwd_index.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"
+            integrity="sha512-jGsMH83oKe9asCpkOVkBnUrDDTp8wl+adkB2D+//JtlxO4SrLoJdhbOysIFQJloQFD+C4Fl1rMsQZF76JjV0eQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+            integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="./js/port.js"></script>
+    </head>
+
+
+    <body>
+        <div class="bar_click">
+            <div class="bar_main">
+                <div class="bar_logo">
+                    <a href="#">
+                        <svg class="logoimg" xmlns="http://www.w3.org/2000/svg" width="74" height="30" fill="none"
+                            viewBox="0 0 74 30">
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M14.2 25.17H9.28V20.7a1.45 1.45 0 00-2.9 0v4.47H1.44a1.45 1.45 0 100 2.9H14.2a1.45 1.45 0 000-2.9zM4.5 9.15c0-4.6 2.08-5.28 3.33-5.28 1.24 0 3.33.69 3.33 5.28v.36c0 4.6-2.09 5.28-3.33 5.28-1.25 0-3.34-.69-3.34-5.28v-.36zm3.33 8.54c3.84 0 6.23-3.13 6.23-8.18v-.36c0-5.05-2.39-8.18-6.23-8.18-3.85 0-6.24 3.13-6.24 8.18v.36c0 5.05 2.39 8.18 6.24 8.18zM33.37 10.35H17.81a1.45 1.45 0 000 2.9h15.56a1.45 1.45 0 100-2.9zM31.82 25.84c-7.08 1.84-9.45.8-10.14.26-.45-.35-.65-.8-.65-1.48v-.87h10.25c.8 0 1.46-.65 1.46-1.45v-5.08c0-.8-.65-1.45-1.46-1.45h-11.7a1.45 1.45 0 100 2.9h10.25v2.18H19.57c-.8 0-1.45.65-1.45 1.45v2.32a4.6 4.6 0 001.78 3.78c1.2.92 2.94 1.39 5.21 1.39 2.05 0 4.54-.38 7.44-1.13a1.45 1.45 0 10-.73-2.82zM20.3 7.83h10.82a1.45 1.45 0 100-2.9h-9.36V1.44a1.45 1.45 0 10-2.9 0v4.93c0 .8.65 1.45 1.45 1.45z"
+                                clip-rule="evenodd"></path>
+                            <rect width="3" height="15" x="70" fill="currentColor" rx="1.5"></rect>
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M64.5 13.28a1.45 1.45 0 002.73-1c-.05-.13-1-2.68-3.38-4.5l3.7-4.1a1.45 1.45 0 00-1.09-2.42h-9.05a1.45 1.45 0 100 2.9h5.8l-6.88 7.64a1.45 1.45 0 102.16 1.95l3.41-3.8a8.02 8.02 0 012.6 3.33zM69.56 26.52h-7.01a.82.82 0 01-.82-.82v-1.95h8.65v1.95c0 .45-.37.82-.82.82zm2.27-9.37c-.8 0-1.45.65-1.45 1.45v2.25h-8.65V18.6a1.45 1.45 0 10-2.9 0v7.1a3.72 3.72 0 003.72 3.72h7.01a3.72 3.72 0 003.72-3.72v-7.1c0-.8-.65-1.45-1.45-1.45zM42.46 3.87c2.22 0 2.33 4.24 2.33 5.08 0 .85-.11 5.09-2.33 5.09-2.21 0-2.32-4.24-2.32-5.09 0-.84.11-5.08 2.32-5.08zm0 13.07c1.76 0 3.23-.93 4.14-2.62.71-1.34 1.1-3.2 1.1-5.37 0-2.16-.39-4.02-1.1-5.36A4.59 4.59 0 0042.46.97c-1.75 0-3.22.93-4.13 2.62-.72 1.34-1.1 3.2-1.1 5.36 0 2.17.38 4.03 1.1 5.37a4.59 4.59 0 004.13 2.62z"
+                                clip-rule="evenodd"></path>
+                            <path fill="currentColor" fill-rule="evenodd"
+                                d="M51.4.49c-.8 0-1.45.65-1.45 1.45v17.78c-1.93.6-5.75 1.12-10.38 1.12h-2.2a1.45 1.45 0 000 2.91h2.2c2.64 0 7.21-.23 10.38-1.02v4.84a1.45 1.45 0 002.9 0V1.94c0-.8-.65-1.45-1.45-1.45z"
+                                clip-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="return_btn">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+            </div>
+            <div class="bar_login_member">
+                <div class="login">
+                    <p>로그인</p>
+                </div>
+                <div class="member">
+                    <p>회원가입</p>
+                </div>
+            </div>
+            <div class="bar_cate">
+                <ul class="depth1">
+                    <li>
+                        <div class="any on">
+                            <span class="bar_img">
+                                <i class="fa-solid fa-house"></i>
+                            </span>
+                            <span class="bar_name">
+                                커뮤니티
+                            </span>
+                            <span class="bar_arrow">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <ul class="depth2">
+                            <li class="on">홈</li>
+                            <li>추천</li>
+                            <li>#채널</li>
+                            <li>집들이</li>
+                            <li>집사진</li>
+                            <li>3D인테리어</li>
+                            <li>살림수납</li>
+                            <li>콜렉터블</li>
+                            <li>홈스토랑</li>
+                            <li>핫플레이스</li>
+                            <li>육아</li>
+                            <li>플랜테리어</li>
+                            <li>반려동물</li>
+                            <li>캠핑</li>
+                            <li>취미</li>
+                            <li>이벤트</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="any">
+                            <span class="bar_img">
+                                <i class="fa-solid fa-shop"></i>
+                            </span>
+                            <span class="bar_name">
+                                쇼핑
+                            </span>
+                            <span class="bar_arrow">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <ul class="depth2">
+                            <li class="on">쇼핑홈</li>
+                            <li>카테고리</li>
+                            <li>베스트</li>
+                            <li>오늘의딜</li>
+                            <li>리퍼마켓</li>
+                            <li>오!굿즈</li>
+                            <li>빠른배송</li>
+                            <li>오!쇼룸</li>
+                            <li>프리미엄</li>
+                            <li>기획전</li>
+                        </ul>  
+                    </li>
+                    <li>
+                        <div class="any">
+                            <span class="bar_img">
+                                <i class="fa-solid fa-truck"></i>
+                            </span>
+                            <span class="bar_name">
+                                인테리어/생활
+                            </span>
+                            <span class="bar_arrow">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </div>
+                        <ul class="depth2">
+                            <li class="on">홈</li>
+                            <li>주거공간시공</li>
+                            <li>상업공간시공</li>
+                            <li>시공자재랭킹</li>
+                            <li>제품설치</li>
+                            <li>이사</li>
+                            <li>집보기체크리스트</li>
+                            <li>아파트시공사례</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>  
+            <div class="bar_last">
+                <ul>
+                    <li>
+                        마이페이지
+                    </li>
+                    <li>
+                        나의쇼핑
+                    </li>
+                    <li>
+                        스크랩북
+                    </li>
+                    <li>
+                        알림
+                    </li>
+                    <li>
+                        이벤트
+                    </li>
+                    <li>
+                        사진 올리기
+                    </li>
+                    <li>
+                        집들이 글쓰기
+                    </li>
+                    <li>
+                        노하우 글쓰기
+                    </li>
+                    <li>
+                        상품 리뷰 쓰기
+                    </li>
+                    <li>
+                        시공 전문가 리뷰 쓰기
+                    </li>
+                    <li>
+                        고객센터
+                    </li>
+                </ul>
+            </div>
+            <div class="bar_application">
+                <span><a href="#">전문가 신청</a></span>
+                <span><a href="#">판매자 신청</a></span>
+            </div>
+        </div>
+        <div class="darkbg"></div>
+        <div id="header">
+            <div class="row1">
+                <div class="bar">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="logo_basic_cate">
+                    <div class="logo">
+                        <a href="#">
+                            <svg class="logoimg" xmlns="http://www.w3.org/2000/svg" width="74" height="30" fill="none"
+                                viewBox="0 0 74 30">
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="M14.2 25.17H9.28V20.7a1.45 1.45 0 00-2.9 0v4.47H1.44a1.45 1.45 0 100 2.9H14.2a1.45 1.45 0 000-2.9zM4.5 9.15c0-4.6 2.08-5.28 3.33-5.28 1.24 0 3.33.69 3.33 5.28v.36c0 4.6-2.09 5.28-3.33 5.28-1.25 0-3.34-.69-3.34-5.28v-.36zm3.33 8.54c3.84 0 6.23-3.13 6.23-8.18v-.36c0-5.05-2.39-8.18-6.23-8.18-3.85 0-6.24 3.13-6.24 8.18v.36c0 5.05 2.39 8.18 6.24 8.18zM33.37 10.35H17.81a1.45 1.45 0 000 2.9h15.56a1.45 1.45 0 100-2.9zM31.82 25.84c-7.08 1.84-9.45.8-10.14.26-.45-.35-.65-.8-.65-1.48v-.87h10.25c.8 0 1.46-.65 1.46-1.45v-5.08c0-.8-.65-1.45-1.46-1.45h-11.7a1.45 1.45 0 100 2.9h10.25v2.18H19.57c-.8 0-1.45.65-1.45 1.45v2.32a4.6 4.6 0 001.78 3.78c1.2.92 2.94 1.39 5.21 1.39 2.05 0 4.54-.38 7.44-1.13a1.45 1.45 0 10-.73-2.82zM20.3 7.83h10.82a1.45 1.45 0 100-2.9h-9.36V1.44a1.45 1.45 0 10-2.9 0v4.93c0 .8.65 1.45 1.45 1.45z"
+                                    clip-rule="evenodd"></path>
+                                <rect width="3" height="15" x="70" fill="currentColor" rx="1.5"></rect>
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="M64.5 13.28a1.45 1.45 0 002.73-1c-.05-.13-1-2.68-3.38-4.5l3.7-4.1a1.45 1.45 0 00-1.09-2.42h-9.05a1.45 1.45 0 100 2.9h5.8l-6.88 7.64a1.45 1.45 0 102.16 1.95l3.41-3.8a8.02 8.02 0 012.6 3.33zM69.56 26.52h-7.01a.82.82 0 01-.82-.82v-1.95h8.65v1.95c0 .45-.37.82-.82.82zm2.27-9.37c-.8 0-1.45.65-1.45 1.45v2.25h-8.65V18.6a1.45 1.45 0 10-2.9 0v7.1a3.72 3.72 0 003.72 3.72h7.01a3.72 3.72 0 003.72-3.72v-7.1c0-.8-.65-1.45-1.45-1.45zM42.46 3.87c2.22 0 2.33 4.24 2.33 5.08 0 .85-.11 5.09-2.33 5.09-2.21 0-2.32-4.24-2.32-5.09 0-.84.11-5.08 2.32-5.08zm0 13.07c1.76 0 3.23-.93 4.14-2.62.71-1.34 1.1-3.2 1.1-5.37 0-2.16-.39-4.02-1.1-5.36A4.59 4.59 0 0042.46.97c-1.75 0-3.22.93-4.13 2.62-.72 1.34-1.1 3.2-1.1 5.36 0 2.17.38 4.03 1.1 5.37a4.59 4.59 0 004.13 2.62z"
+                                    clip-rule="evenodd"></path>
+                                <path fill="currentColor" fill-rule="evenodd"
+                                    d="M51.4.49c-.8 0-1.45.65-1.45 1.45v17.78c-1.93.6-5.75 1.12-10.38 1.12h-2.2a1.45 1.45 0 000 2.91h2.2c2.64 0 7.21-.23 10.38-1.02v4.84a1.45 1.45 0 002.9 0V1.94c0-.8-.65-1.45-1.45-1.45z"
+                                    clip-rule="evenodd"></path>
+                            </svg>
+                        </a>
+                        <div class="blind">
+                            logo
+                        </div>
+                    </div>
+                    <div class="basic_cate">
+                        <ul>
+                            <li class="on">
+                                <a href="#">
+                                    <h2>커뮤니티</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h2>쇼핑</h2>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h2>인테리어/생활</h2>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="search_info">
+                    <div class="searchbox">
+                        <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" placeholder="통합검색" autofocus>
+                    </div>
+                    <div class="shopping_basket">
+                        <a href><i class="fa-solid fa-cart-shopping"></i></a>
+                    </div>
+                    <div class="partinfo">
+                        <div class="info">
+                            <ul>
+                                <li>
+                                    <a href="#">로그인</a>
+                                </li>
+                                <li>
+                                    <a href="#">회원가입</a>
+                                </li>
+                                <li>
+                                    <a href="#">고객센터</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="writing">
+                            <a href="#">
+                                글쓰기
+                                <span>
+                                    <i class="fa-solid fa-chevron-down"></i>
+                                </span>
+                            </a>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="review">
+                                            <div class="writing_img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36"
+                                                    fill="none">
+                                                    <rect width="27" height="29" x="6.54" y="3.59" fill="#DBDBDB"
+                                                        stroke="#000" stroke-linejoin="round" rx="2.5"
+                                                        transform="rotate(4 6.54 3.6)"></rect>
+                                                    <rect width="27" height="29" x="2.5" y="1.5" fill="#fff"
+                                                        stroke="#000" stroke-linejoin="round" rx="2.5"></rect>
+                                                    <rect width="22" height="22" x="5" y="4" fill="#FFE2C7" rx="1">
+                                                    </rect>
+                                                    <path fill="#fff" fill-rule="evenodd"
+                                                        d="m14 7 5 .45v3.5l-5-.45V7zm0 4.5V15l5 .45v-3.5l-5-.45zm6 .55v3.5l5 .45v-3.5l-5-.45zm5-.55V8l-5-.45v3.5l5 .45z"
+                                                        clip-rule="evenodd"></path>
+                                                    <path fill="#E6A87C" fill-rule="evenodd" d="m5 19 22 2v7L5 26v-7z"
+                                                        clip-rule="evenodd"></path>
+                                                    <path fill="#F1C8A3" fill-rule="evenodd" d="M5 3.45h5v16l-5 4v-20z"
+                                                        clip-rule="evenodd"></path>
+                                                </svg>
+                                            </div>
+                                            <div class="writing_text">
+                                                <h3>사진/동영상 올리기</h3>
+                                                <p>우리 집의 공간과 나의 일상을 기록해 보세요.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="review">
+                                            <div class="writing_img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <path d="M0 0h36v36H0z"></path>
+                                                        <path fill="#FFF6E6" d="M27.2 29.31H4.8V14.38h22.4"></path>
+                                                        <path fill="#EDE2CD" d="M27.2 17.18H4.8v-2.8h22.4"></path>
+                                                        <path stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M4.8 29.31V14.38h22.4v14.93H4.8z"></path>
+                                                        <path fill="#FFF"
+                                                            d="M16 19.05a4.67 4.67 0 0 1 4.67 4.66v5.6h-9.34v-5.6A4.67 4.67 0 0 1 16 19.05z">
+                                                        </path>
+                                                        <path fill="#fff"
+                                                            d="M16 19.05a4.67 4.67 0 0 1 4.67 4.66v5.6h-9.34v-5.6A4.67 4.67 0 0 1 16 19.05z">
+                                                        </path>
+                                                        <path stroke="#000"
+                                                            d="M16 19.05a4.67 4.67 0 0 1 4.67 4.66v5.6h-9.34v-5.6A4.67 4.67 0 0 1 16 19.05z">
+                                                        </path>
+                                                        <path fill="#FBDEC1"
+                                                            d="M2.94 14.38a.9.9 0 0 1-.81-1.3l3.25-6.6a.9.9 0 0 1 .8-.5h19.64c.34 0 .65.2.8.5l3.25 6.6a.9.9 0 0 1-.8 1.3H2.93z">
+                                                        </path>
+                                                        <path fill="#E9C39D"
+                                                            d="M2.94 14.38a.9.9 0 0 1-.81-1.3l.74-1.5h26.26l.74 1.5a.9.9 0 0 1-.8 1.3H2.92z">
+                                                        </path>
+                                                        <path stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M2.94 14.38a.9.9 0 0 1-.81-1.3l3.25-6.6a.9.9 0 0 1 .8-.5h19.64c.34 0 .65.2.8.5h0l3.25 6.6a.9.9 0 0 1-.8 1.3h0H2.93z">
+                                                        </path>
+                                                        <g transform="translate(26 9)">
+                                                            <path fill="#fff" d="M0 5h8.07v12H0z"></path>
+                                                            <path fill="#ffdb92" d="M0 0h8v4H0z"></path>
+                                                            <path fill="#fff6e6"
+                                                                d="M8.5 17.43H-.52 8.5L4 23.8l-4.52-6.37H8.5"></path>
+                                                            <path stroke="#000"
+                                                                d="M8.5 1A1.49 1.49 0 0 0 7-.5H1A1.5 1.5 0 0 0-.5 1l-.02 16.43L4 23.8l4.5-6.37z">
+                                                            </path>
+                                                            <path fill="#000" d="m4 23 2-2H2z"></path>
+                                                            <rect width="6" height="2" x="-14" y="3" stroke="#000"
+                                                                rx="1" ry="1" transform="rotate(-90)"></rect>
+                                                            <rect width="5" height="1" x="-13.5" y="3.5" fill="#ffdb92"
+                                                                rx="0.5" ry="0.5" transform="rotate(-90)"></rect>
+                                                            <path fill="#000" d="M0 4h8v1H0z" opacity="0.9"></path>
+                                                            <path stroke="#000" d="M-.52 17.43H8.5"></path>
+                                                        </g>
+                                                        <path fill="#000" d="m30 32 2-2h-4z"></path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="writing_text">
+                                                <h3>집들이 글쓰기</h3>
+                                                <p>집에 관한 이야기를 글로 작성해 보세요.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="review">
+                                            <div class="writing_img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <path d="M0 0h36v36H0z"></path>
+                                                        <path fill="#EDEDED" d="M17 10h2v22h-2z"></path>
+                                                        <path fill="#FFF"
+                                                            d="M3 10.2c3.65-1.07 6.98-1.07 10 0h10.16c2.98-1 6.26-1 9.84 0v21c-5.79-1.62-10.79-1.29-15 1-4.21-2.37-9.21-2.7-15-1z">
+                                                        </path>
+                                                        <path fill="#EDEDED"
+                                                            d="M16.5 15h3v16c-.66.8-1.16 1.2-1.5 1.2-.34 0-.84-.4-1.5-1.2V15z">
+                                                        </path>
+                                                        <path stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M3 10.2c3.65-1.07 6.98-1.07 10 0h10.16c2.98-1 6.26-1 9.84 0h0v1.97h0V31.2c-5.79-1.62-10.79-1.29-15 1-4.21-2.37-9.21-2.7-15-1z">
+                                                        </path>
+                                                        <g transform="translate(11 3)">
+                                                            <path fill="#FFDB92" stroke="#000"
+                                                                d="M7 0a7 7 0 0 1 3 13.33V17H4v-3.67A7 7 0 0 1 7 0z">
+                                                            </path>
+                                                            <path stroke="#000" stroke-linecap="square"
+                                                                d="M7 15.68V8.5"></path>
+                                                            <circle cx="7" cy="7.5" r="1.5" fill="#000"></circle>
+                                                            <path fill="#FFF" stroke="#000" stroke-linecap="round"
+                                                                stroke-linejoin="round" d="M3 16h8v7H3z"></path>
+                                                            <path stroke="#000" stroke-linecap="square"
+                                                                d="M3 18.5h8m-8 2h8"></path>
+                                                        </g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="writing_text">
+                                                <h3>노하우 글쓰기</h3>
+                                                <p>다양한 인테리어 노하우를 공유해 주세요</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="review">
+                                            <div class="writing_img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <path d="M0 0h36v36H0z"></path>
+                                                        <g stroke-linejoin="round" transform="translate(2 3)">
+                                                            <rect width="4" height="8" x="3" y="21" fill="#FFB787"
+                                                                stroke="#000" rx="2"></rect>
+                                                            <rect width="24" height="25" fill="#FFE2C7" rx="3"></rect>
+                                                            <rect width="24" height="25" fill="#ffe2c7" rx="3"></rect>
+                                                            <rect width="24" height="25" stroke="#000"
+                                                                stroke-width="1.2" rx="3"></rect>
+                                                            <rect width="6" height="3" x="9" y="5" fill="#DB9F77"
+                                                                stroke="#FFF" rx="1.5"></rect>
+                                                            <rect width="6" height="3" x="9" y="17" fill="#DB9F77"
+                                                                stroke="#FFF" rx="1.5"></rect>
+                                                            <path fill="#FFDB92" stroke="#EDC29B" d="M1.5 12.5h21">
+                                                            </path>
+                                                        </g>
+                                                        <path fill="#35C5F0"
+                                                            d="m26.25 31.53-3.7 1.32a1 1 0 0 1-1.34-.97l.1-3.93a.99.99 0 0 0-.2-.64l-2.4-3.11a1 1 0 0 1 .51-1.57l3.77-1.12a1 1 0 0 0 .55-.39l2.22-3.24a1 1 0 0 1 1.65 0l2.22 3.24a1 1 0 0 0 .55.4l3.77 1.1a1 1 0 0 1 .5 1.58l-2.4 3.11a1 1 0 0 0-.2.64l.11 3.93a1 1 0 0 1-1.33.97l-3.71-1.32a1 1 0 0 0-.67 0z">
+                                                        </path>
+                                                        <path fill="#9AE2F7"
+                                                            d="M27.15 17.61a1 1 0 0 1 .26.26l2.22 3.25c.06.09.13.16.22.23l-8.59 8.58.06-1.98a.99.99 0 0 0-.21-.64l-2.4-3.11a1 1 0 0 1 .51-1.57l3.77-1.12a1 1 0 0 0 .55-.39l2.22-3.24a1 1 0 0 1 1.39-.26z">
+                                                        </path>
+                                                        <path stroke="#000" stroke-width="1.2"
+                                                            d="m26.29 30.85-3.31 1.17a.9.9 0 0 1-1.2-.86l.1-3.51c0-.2-.06-.4-.18-.57l-2.14-2.78a.9.9 0 0 1 .45-1.4l3.37-.99a.9.9 0 0 0 .48-.35l1.99-2.9a.9.9 0 0 1 1.47 0l1.99 2.9c.11.17.28.3.48.35l3.37 1a.9.9 0 0 1 .45 1.4l-2.14 2.77a.89.89 0 0 0-.18.57l.1 3.5a.9.9 0 0 1-1.2.87l-3.3-1.17a.9.9 0 0 0-.6 0z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="writing_text">
+                                                <h3>상품 리뷰 쓰기</h3>
+                                                <p>상품 리뷰를 작성하고 포인트도 받아 보세요.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="review">
+                                            <div class="writing_img">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36">
+                                                    <g fill="none" fill-rule="evenodd">
+                                                        <path d="M0 0h36v36H0z"></path>
+                                                        <path fill="#FFDB92"
+                                                            d="M13.75 3.52h1.9a8.1 8.1 0 0 1 8.1 8.1v1.9H5.65v-1.9a8.1 8.1 0 0 1 8.1-8.1z">
+                                                        </path>
+                                                        <path fill="#FFDB92" d="M12 3h5v2h-5z"></path>
+                                                        <path fill="#FFF"
+                                                            d="M12.2 23.92h5.4a7.2 7.2 0 0 1 7.2 7.2v2.8H5v-2.8a7.2 7.2 0 0 1 7.2-7.2z">
+                                                        </path>
+                                                        <path fill="#EDEDED" fill-opacity="0.14"
+                                                            d="M17.6 23.92c1.2 0 2.33.3 3.32.8a10.84 10.84 0 0 1-6.19 1.78c-2.28 0-4.38-.57-6.04-1.67a7.15 7.15 0 0 1 3.51-.91h5.4z">
+                                                        </path>
+                                                        <path stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M5 33.59V30.9a6.59 6.59 0 0 1 5.47-6.37M10.64 24.6v3.19">
+                                                        </path>
+                                                        <path fill="#B1C0CB" fill-rule="nonzero" stroke="#000"
+                                                            stroke-linecap="round" stroke-linejoin="round"
+                                                            d="m8.9 33.92.98-6H21.9l.98 6"></path>
+                                                        <path fill="#FFF6E6" fill-rule="nonzero"
+                                                            d="M22.04 14.29c.31.9.48 2.3.48 3.31 0 4.65-3.49 7.2-7.79 7.2s-7.78-2.55-7.78-7.2c0-1.02.17-2.4.48-3.31">
+                                                        </path>
+                                                        <path fill="#EDE2CD" fill-rule="nonzero"
+                                                            d="M22.04 14.29c.16.48.29 1.09.37 1.71H7.06c.08-.62.2-1.23.37-1.71h14.6z">
+                                                        </path>
+                                                        <path stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M22.04 14.29c.31.9.48 2.3.48 3.31 0 4.65-3.49 7.2-7.79 7.2s-7.78-2.55-7.78-7.2c0-1.02.17-2.4.48-3.31">
+                                                        </path>
+                                                        <path stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            d="M16.29 20.9c-.23.46-.84.79-1.56.79-.72 0-1.33-.33-1.56-.78">
+                                                        </path>
+                                                        <path stroke="#000" stroke-linecap="round"
+                                                            stroke-linejoin="round" stroke-width="1.3"
+                                                            d="M12 17.55V17m5.46.55V17"></path>
+                                                        <path fill="#EFC570"
+                                                            d="m9.5 5 2.88 4.72v-5.9zm10.44 0-2.89 4.72v-5.9z"></path>
+                                                        <g stroke="#000" stroke-linecap="round">
+                                                            <path stroke-linejoin="round"
+                                                                d="M5.75 11.76c0-4.08 2.9-7.45 6.63-7.94v-.3c0-.55.43-1 .95-1h2.84c.53 0 .95.45.95 1v.3c3.74.5 6.63 3.86 6.63 7.94">
+                                                            </path>
+                                                            <path
+                                                                d="M12.38 5.52v-2c0-.55.43-1 .95-1h2.84c.53 0 .95.45.95 1v2">
+                                                            </path>
+                                                            <path fill="#F5F5F5" fill-rule="nonzero"
+                                                                d="M4.2 14.02h20.7"></path>
+                                                        </g>
+                                                        <path fill="#35C5F0"
+                                                            d="m26.25 33.1-3.71 1.31a1 1 0 0 1-1.34-.97l.11-3.93a.99.99 0 0 0-.2-.64l-2.4-3.11a1 1 0 0 1 .5-1.57L23 23.07a1 1 0 0 0 .54-.39l2.23-3.24a1 1 0 0 1 1.65 0l2.22 3.24a1 1 0 0 0 .54.4l3.78 1.1a1 1 0 0 1 .5 1.58l-2.4 3.11a1 1 0 0 0-.2.64l.1 3.93a1 1 0 0 1-1.33.97l-3.7-1.32a1 1 0 0 0-.67 0z">
+                                                        </path>
+                                                        <path fill="#9AE2F7"
+                                                            d="M27.15 19.18a1 1 0 0 1 .26.26l2.22 3.24c.06.09.13.16.21.23l-8.58 8.58.05-1.98a.99.99 0 0 0-.2-.64l-2.4-3.11a1 1 0 0 1 .5-1.57L23 23.07a1 1 0 0 0 .54-.39l2.23-3.24a1 1 0 0 1 1.39-.26z">
+                                                        </path>
+                                                        <path stroke="#000"
+                                                            d="m26.25 33.1-3.71 1.31a1 1 0 0 1-1.34-.97l.11-3.93a.99.99 0 0 0-.2-.64l-2.4-3.11a1 1 0 0 1 .5-1.57L23 23.07a1 1 0 0 0 .54-.39l2.23-3.24a1 1 0 0 1 1.65 0l2.22 3.24a1 1 0 0 0 .54.4l3.78 1.1a1 1 0 0 1 .5 1.58l-2.4 3.11a1 1 0 0 0-.2.64l.1 3.93a1 1 0 0 1-1.33.97l-3.7-1.32a1 1 0 0 0-.67 0z">
+                                                        </path>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                            <div class="writing_text">
+                                                <h3>시공 전문가 리뷰쓰기</h3>
+                                                <p>시공 전문가 리뷰를 작성하고 포인트도 받아 보세요.</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="nav">
+            <div class="row">
+                <ul class="community">
+                    <li class="on">
+                        <a href="#">
+                            <h3>홈</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>추천</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>#채널</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>집들이</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>집사진</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>3D인테리어</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>살림수납</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>콜렉터블</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>홈스토랑</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>핫플레이스</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>육아</h3>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h3>플랜테리어</h3>
+                        </a>
+                    </li>
+                    <li class="pet">
+                        <a href="#">
+                            <h3>반려동물</h3>
+                        </a>
+                        <a href="#">
+                            <span class="chevron_down_1">
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </span>
+                        </a>
+                        <ul class="minicate">
+                            <li>
+                                <a href="#">
+                                    <h3>반려동물</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3>캠핑</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3>취미</h3>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <h3>이벤트</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="popular_slide_outter">
+                    <div class="popular_slide_inner">
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>1</p>
+                            </div>
+                            <div class="date_status">
+
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <path
+                                        d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <div class="popular_name">
+                                <p>먼데이하우스</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>2</p>
+                            </div>
+                            <div class="date_status">
+                                <p><i class="fa-solid fa-caret-up"></i></p>
+                            </div>
+                            <div class="popular_name">
+                                <p>스마트티비</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>3</p>
+                            </div>
+                            <div class="date_status">
+
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <path
+                                        d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                        fill="currentColor"></path>
+                                </svg>
+
+                            </div>
+                            <div class="popular_name">
+                                <p>벽꾸미기</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>4</p>
+                            </div>
+                            <div class="date_status">
+
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <path
+                                        d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <div class="popular_name">
+                                <p>먼지없는 러그</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>6</p>
+                            </div>
+                            <div class="date_status">
+
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    preserveAspectRatio="xMidYMid meet">
+                                    <path
+                                        d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                        fill="currentColor"></path>
+                                    <path
+                                        d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                        fill="currentColor"></path>
+                                </svg>
+                            </div>
+                            <div class="popular_name">
+                                <p>무타공마켓</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>7</p>
+                            </div>
+                            <div class="date_status">
+                                <p><i class="fa-solid fa-caret-up"></i></p>
+                            </div>
+                            <div class="popular_name">
+                                <p>틈새세모솔</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>8</p>
+                            </div>
+                            <div class="date_status">
+                                <p><i class="fa-solid fa-caret-up"></i></p>
+                            </div>
+                            <div class="popular_name">
+                                <p>창틀선반</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>9</p>
+                            </div>
+                            <div class="date_status">
+                                <p><i class="fa-solid fa-caret-up"></i></p>
+                            </div>
+                            <div class="popular_name">
+                                <p>오늘의 가든</p>
+                            </div>
+                        </div>
+                        <div class="popular_slide">
+                            <div class="rank">
+                                <p>10</p>
+                            </div>
+                            <div class="date_status">
+                                <p><i class="fa-solid fa-caret-up"></i></p>
+                            </div>
+                            <div class="popular_name">
+                                <p>먼데이하우스 소파</p>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="chevron_down_2">
+                        <a href="#">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </a>
+                        <ul class="rank_full">
+                            <h3>인기 검색어</h3>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>1</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                preserveAspectRatio="xMidYMid meet">
+                                                <path
+                                                    d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>먼데이하우스</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>2</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p><i class="fa-solid fa-caret-up"></i></p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>스마트티비</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>3</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                preserveAspectRatio="xMidYMid meet">
+                                                <path
+                                                    d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>벽꾸미기</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>4</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                preserveAspectRatio="xMidYMid meet">
+                                                <path
+                                                    d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>먼지없는 러그</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>5</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                preserveAspectRatio="xMidYMid meet">
+                                                <path
+                                                    d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>스위치커버</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>6</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p>
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                                preserveAspectRatio="xMidYMid meet">
+                                                <path
+                                                    d="M4.18639 15V11.0707H4.22334L6.99431 15H8.0206V9H6.83421V12.9085H6.80137L4.0345 9H3V15H4.18639Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M12.7943 13.9605H10.1096V12.447H12.6425V11.4823H10.1096V10.0353H12.7943V9H8.86982V15H12.7943V13.9605Z"
+                                                    fill="currentColor"></path>
+                                                <path
+                                                    d="M17.096 10.9002H17.1329L18.2578 15H19.4277L21 9H19.7151L18.7791 13.3451H18.7463L17.6379 9H16.5911L15.4827 13.3451H15.4498L14.518 9H13.2331L14.8012 15H15.9712L17.096 10.9002Z"
+                                                    fill="currentColor"></path>
+                                            </svg>
+                                        </p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>무타공마켓</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>7</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p><i class="fa-solid fa-caret-up"></i></p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>틈새세모솔</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>8</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p><i class="fa-solid fa-caret-up"></i></p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>창틀선반</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>9</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p><i class="fa-solid fa-caret-up"></i></p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>오늘의 가든</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="rank1">
+                                        <p>10</p>
+                                    </div>
+                                    <div class="date_status1">
+                                        <p><i class="fa-solid fa-caret-up"></i></p>
+                                    </div>
+                                    <div class="popular_name1">
+                                        <p>먼데이하우스 소파</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </span>
+                </div>
+                <ul class="shopping">
+
+                </ul>
+                <ul class="interior/life">
+
+                </ul>
+            </div>
+        </div>
+        <div id="section">
+            <div class="main_slider">
+                <div class="row">
+                    <div class="main">
+                        <div class="main_group">
+                            <div class="main_image">
+
+                            </div>
+                            <div class="main_text">
+                                <h3>
+                                    나만의 감성으로 꾸민 2평 변화기
+                                </h3>
+                                <p>
+                                    <span><img src="./images/avatar.webp" alt=""></span>
+                                    fragrant-life
+                                </p>
+                            </div>
+                        </div>
+                        <div class="main_slide_outer">
+                            <div class="main_slide_inner">
+                                <a href="#">
+                                    <div class="slidecase">
+                                        <div class="main_slide main_slide1">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="slidecase">
+                                        <div class="main_slide main_slide2">
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="slidecase">
+                                        <div class="main_slide main_slide3">
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main_cate">
+                <div class="row">
+                    <ul>
+                        <li>
+                            <div class="icon">
+                                <a href="#">
+                                    <img src="./images/설맞이세일.avif" alt="">
+                                </a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>설맞이세일</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/오늘의딜.webp" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>오늘의딜</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/수납꿀팁.avif" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>수납꿀팁</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/행운출첵.avif" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>행운출첵</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/집들이.avif" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>집들이</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/추천콘텐츠.avif" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>추천콘텐츠</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/장보기.avif" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>장보기</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/빠른배송.avif" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>빠른배송</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/리모델링.webp" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>리모델링</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="icon">
+                                <a href="#"><img src="./images/빠른이사.avif" alt=""></a>
+                            </div>
+                            <div class="cate_name">
+                                <a href="#">
+                                    <p>쉬운이사</p>
+                                </a>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="recommend_interior">
+                <div class="row">
+                    <div class="recommend_text">
+                        <div class="rec_text">
+                            <h3>
+                                <a href="#">이런 사진 찾고 있나요?</a>
+                            </h3>
+                            <p>좋아하실 만한 인테리어 콘텐츠를 추천해드려요</p>
+                        </div>
+                        <div class="more">
+                            <div class="morecase">
+                            <a href="#">더보기</a>
+                            </div>
+                            <div class="morearrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="recommend_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="list_img list_img1">
+                                        <img src="./images/우크피.avif" alt="">
+                                    </div>
+                                    <div class="list_user">
+                                        <span><img src="./images/우크피아이콘.avif" alt=""></span>
+                                        <p>우크피</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_img list_img2">
+                                        <img src="./images/인스패밀리.avif" alt="">
+                                    </div>
+                                    <div class="list_user">
+                                        <span><img src="./images/인스패아이콘.avif" alt=""></span>
+                                        <p>인스패밀리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_img list_img3">
+                                        <img src="./images/보통집.avif" alt="">
+                                    </div>
+                                    <div class="list_user">
+                                        <span><img src="./images/보통집아이콘.avif" alt=""></span>
+                                        <p>보통집</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_img list_img4">
+                                        <img src="./images/마감맛.avif" alt="">
+                                    </div>
+                                    <div class="list_user">
+                                        <span><img src="./images/avatar.webp" alt=""></span>
+                                        <p>마감맛</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_img list_img5">
+                                        <img src="./images/최고의오늘.avif" alt="">
+                                    </div>
+                                    <div class="list_user">
+                                        <span><img src="./images/최고의오늘 아이콘.avif" alt=""></span>
+                                        <p>최고의오늘</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="list_img list_img6">
+                                        <img src="./images/밀키홈.avif" alt="">
+                                    </div>
+                                    <div class="list_user">
+                                        <span><img src="./images/밀키홈아이콘.avif" alt=""></span>
+                                        <p>밀키홈</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="housewarming">
+                <div class="row">
+                    <div class="housewarming_text">
+                        <div class="house_text">
+                            <h3>
+                                <a href="#">이번주 최다 조회 40평 이상 집들이📈</a>
+                            </h3>
+                        </div>
+                        <div class="more">
+                            <div class="morecase">
+                                <a href="#">
+                                    <p>더보기</p>
+                                </a>
+                            </div>
+                            <div class="morearrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="housewarming_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="house_img house_img1">
+                                        <img src="./images/집들이1.avif" alt="">
+                                    </div>
+                                    <div class="house_img_explain">
+                                        <span class="text_em">고급스러운 모던 인테리어로</span>
+                                        <span>탈바꿈한<br>
+                                            갤러리같은 아파트</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="house_img house_img1">
+                                        <img src="./images/집들이2.avif" alt="">
+                                    </div>
+                                    <div class="house_img_explain">
+                                        <span class="text_em">원래 화단이었다고?</span>
+                                        <span>😮이색 팬트리가 있는 47평 아파트</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="house_img house_img1">
+                                        <img src="./images/집들이3.avif" alt="">
+                                    </div>
+                                    <div class="house_img_explain">
+                                        <span class="text_em">뜯다 보니...</span>
+                                        <span>셀프 인테리어 중! 42평 구옥 복층 빌라</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="house_img house_img1">
+                                        <img src="./images/집들이4.avif" alt="">
+                                    </div>
+                                    <div class="house_img_explain">
+                                        <span class="text_em">정원 품은 가족실로</span>
+                                        <span>시작되는 부티크 호텔'st 인테리어</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="anniversary">
+                <div class="row">
+                    <div class="anniversary_text">
+                        <div class="anniv_text">
+                            <h3>
+                                <a href="#">온다.. 온다... 설 명절이 벌써 👃 앞!</a>
+                            </h3>
+                        </div>
+                        <div class="more">
+                            <div class="morecase">
+                                <a href="#">
+                                    <p>더보기</p>
+                                </a>
+                            </div>
+                            <div class="morearrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="anniversary_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="anniversary_img">
+                                        <img src="./images/anniversary1.avif" alt="">
+                                    </div>
+                                    <div class="anniversary_img_explain">
+                                        <span class="text_em">이천명에게 물었다!📢</span>
+                                        <span>조카&부모님 명절 용돈 시세는?</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="anniversary_img">
+                                        <img src="./images/anniversary2.avif" alt="">
+                                    </div>
+                                    <div class="anniversary_img_explain">
+                                        <span class="text_em">설 시즌에 딱!</span>
+                                        <span>뜨끈한 전골까지, 6만원대로 끊는 주간식단</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="anniversary_img">
+                                        <img src="./images/anniversary3.webp" alt="">
+                                    </div>
+                                    <div class="anniversary_img_explain">
+                                        <span class="text_em">에프로 전을 굽는다고?</span>
+                                        <span>진짜 간단한 명절음식 요리법</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="anniversary_img anniversary_img2">
+                                        <img src="./images/anniversary4.avif" alt="">
+                                    </div>
+                                    <div class="anniversary_img_explain">
+                                        <span class="text_em">음식이 한 눈에 보이는 🍎</span>
+                                        <span>냉장고 '봉투' 정리법</span>
+                                    </div>
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="second_cate">
+                <div class="row">
+                    <div class="second_title">
+                        <h3>카테고리별 상품 찾기</h3>
+                    </div>
+                    <div class="sec_cate">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img cate_img1">
+                                        <img src="./images/새학기가구.avif" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>새학기준비</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/가구.avif" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>가구</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/패브릭.avif" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>패브릭</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/가전디지털.avif" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>가전&#183디지털</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/주방용품.webp" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>주방용품</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/식품.webp" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>식품</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/데코식물.webp" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>데코&#183식물</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/조명.webp" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>조명</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/수납정리.webp" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>수납&#183정리</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/생활용품.avif" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>생활용품</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/생필품.webp" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>생필품</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/유아아동.webp" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>유아&#183아동</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="cate_img">
+                                        <img src="./images/반려동물.avif" alt="">
+                                    </div>
+                                    <div class="cate_name">
+                                        <p>반려동물</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="today_dc">
+                <div class="row">
+                    <div class="today_dc_text">
+                        <div class="tod_dc_text">
+                            <h3>
+                                <a href="#">오늘의 딜</a>
+                            </h3>
+                        </div>
+                        <div class="more">
+                            <div class="morecase">
+                                <a href="#">
+                                    <p>더보기</p>
+                                </a>
+                            </div>
+                            <div class="morearrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tod_dc_list">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="flexholder">
+                                        <div class="tod_dc_img_container">
+                                            <img src="./images/핫딜.avif" alt="">
+                                        </div>
+                                        <div class="tod_dc_info">
+                                            <div class="info_company_name">
+                                                코튼리빙
+                                            </div>
+                                            <div class="info_product_name">
+                                                [1/31하루27,900원]후기6만돌파! 40수 코마사 호텔수건 200g 10장
+                                            </div>
+                                            <div class="info_price">
+                                                <span class="discount_rate">
+                                                    63%
+                                                </span>
+                                                <span class="price">
+                                                    28,900
+                                                </span>
+                                            </div>
+                                            <div class="info_rating">
+                                                <span class="star_icon">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="star_rating">
+                                                    4.7
+                                                </span>
+                                                <span class="review_count">
+                                                    리뷰 65,519
+                                                </span>
+                                            </div>
+                                            <div class="info_start">
+                                                <div class="start_period"></div>
+                                                <p class="start_condition">평일 13:00까지 결제시</p>
+                                            </div>
+                                            <div class="info_special">
+                                                <span class="free_express">무료배송</span>
+                                                <span class="special_price">특가</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="flexholder">
+                                        <div class="tod_dc_img_container">
+                                            <img src="./images/핫딜2.avif" alt="">
+                                        </div>
+                                        <div class="tod_dc_info">
+                                            <div class="info_company_name">
+                                                삼성전자
+                                            </div>
+                                            <div class="info_product_name">
+                                                삼성 81cm 스마트모니터 M5 S32CM501화이트
+                                            </div>
+                                            <div class="info_price">
+                                                <span class="discount_rate">
+                                                    26%
+                                                </span>
+                                                <span class="price">
+                                                    329,000
+                                                </span>
+                                            </div>
+                                            <div class="info_rating">
+                                                <span class="star_icon">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="star_rating">
+                                                    4.9
+                                                </span>
+                                                <span class="review_count">
+                                                    리뷰 3,469
+                                                </span>
+                                            </div>
+                                            <div class="info_start">
+                                                <div class="start_period"></div>
+                                                <p class="start_condition">평일 13:00까지 결제시</p>
+                                            </div>
+                                            <div class="info_special">
+                                                <span class="free_express">무료배송</span>
+                                                <span class="special_price">특가</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="flexholder">
+                                        <div class="tod_dc_img_container">
+                                            <img src="./images/핫딜3.avif" alt="">
+                                        </div>
+                                        <div class="tod_dc_info">
+                                            <div class="info_company_name">
+                                                잉글레시나
+                                            </div>
+                                            <div class="info_product_name">
+                                                앱티카 프리미엄 디럭스 유모차
+                                            </div>
+                                            <div class="info_price">
+                                                <span class="discount_rate">
+                                                    50%
+                                                </span>
+                                                <span class="price">
+                                                    690,000
+                                                </span>
+                                            </div>
+                                            <div class="info_rating">
+                                                <span class="star_rating">
+
+                                                </span>
+                                                <span class="review_count">
+                                                    스크랩24
+                                                </span>
+                                            </div>
+                                            <div class="info_start">
+                                                <p class="start_period"></p>
+                                                <p class="start_condition"></p>
+                                            </div>
+                                            <div class="info_special">
+                                                <span class="free_express">무료배송</span>
+                                                <span class="special_price">특가</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="flexholder">
+                                        <div class="tod_dc_img_container">
+                                            <img src="./images/핫딜4.avif" alt="">
+                                        </div>
+                                        <div class="tod_dc_info">
+                                            <div class="info_company_name">
+                                                로보락
+                                            </div>
+                                            <div class="info_product_name">
+                                                [오늘단하루]로보락 BEST 로봇청소기 Q 시리즈 모음전
+                                            </div>
+                                            <div class="info_price">
+                                                <span class="discount_rate">
+                                                    3%
+                                                </span>
+                                                <span class="price">
+                                                    529,000
+                                                </span>
+                                            </div>
+                                            <div class="info_rating">
+                                                <span class="star_icon">
+                                                    <i class="fa-solid fa-star"></i>
+                                                </span>
+                                                <span class="star_rating">
+                                                    4.9
+                                                </span>
+                                                <span class="review_count">
+                                                    리뷰 305
+                                                </span>
+                                            </div>
+                                            <div class="info_start">
+                                                <div class="start_period"></div>
+                                                <p class="start_condition">평일 13:00까지 결제시</p>
+                                            </div>
+                                            <div class="info_special">
+                                                <span class="free_express">무료배송</span>
+                                                <span class="special_price">특가</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="interior_review">
+                <div class="row">
+                    <div class="interior_title">
+                        <div class="interior_text">
+                            <h3>
+                                <a href="#">유저들의 인테리어 시공 리뷰</a>
+                            </h3>
+                        </div>
+                        <div class="more">
+                            <div class="morecase">
+                                <a href="#">
+                                    <p>더보기</p>
+                                </a>
+                            </div>
+                            <div class="morearrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="interior_review_contents">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="int_flex_holder">
+                                        <div class="interior_img_container">
+                                            <img src="./images/인테리어리뷰1.avif" alt="">
+                                        </div>
+                                        <div class="int_flex_holder2">
+                                            <div class="interior_company">
+                                                <h3>에이치디자인</h3>
+                                            </div>
+                                            <div class="interior_user_review">처음 상담했을때부터, 굉장히 친절하셨고 일정과 예산을 맞추기 힘들었지만
+                                                꼼꼼하게 상담해주시면서, 예산까지 절약해주는 방향으로 만들어주셨습니다. 30년동안 한번도 수리한적없던 순정집이었지만 벽지부터 조명
+                                                매립등, 화장실 까지 모두 원하는디자인대로 나온거같아 굉장히 만족합니다. 여러모로 신경 많이써주시고 디자인적으로도 방향을 잘
+                                                잡아주셔서 감사했습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="int_flex_holder">
+                                        <div class="interior_img_container">
+                                            <img src="./images/인테리어리뷰2.avif" alt="">
+                                        </div>
+                                        <div class="int_flex_holder2">
+                                            <div class="interior_company">
+                                                <h3>디티알디</h3>
+                                            </div>
+                                            <div class="interior_user_review">오늘의 집을 통해서 여러 인테리어 업체에 컨택했습니다. 인테리어 비용이 많이
+                                                올라서 저희 예산에 원하는 스타일로 할 수 있을지 걱정이었는데, 사장님이 저희가 원하는 스타일에 최대한 예산에 맞춰주시려
+                                                노력하셨고 사무실이 저희 집 근처여서 선택하게 되었습니다. 디자인은 대부분 사장님께서 추천해주시는 대로 했고 차분하고 깔끔한
+                                                느낌이 들어서 마음에 듭니다!특히 주방에 아일랜드를 길게한 부분이 만족스럽습니다.저는 마감부분을 특히 꼼꼼히 봤는데 사람이 하는
+                                                일이다 보니 아쉬운 부분이 있었지만 수정해주실 수 있는 부분은 직원분들이 오셔서 열심히 해결해주셔서 감사했습니다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="int_flex_holder">
+                                        <div class="interior_img_container">
+                                            <img src="./images/인테리어리뷰3.avif" alt="">
+                                        </div>
+                                        <div class="int_flex_holder2">
+                                            <div class="interior_company">
+                                                <h3>봄인테리어</h3>
+                                            </div>
+                                            <div class="interior_user_review">근처에 있는 인테리어 업체들 상담 받아봤는데 제일 저렴하게 견적으로
+                                                불러주셔서 진행하게되었습니다! 그리고 사장님이 우선 답변이나 전화응답이 정말 빠르십니다..! 연락안되는 문제로는 걱정없을꺼에용
+                                                저는 신축아파트라서 시공할게 많지가 않아서 공사가 안된다는 업체도 있었는데 봄인테리어는 진행해주셨습니다 ~전체적으로 완성된거는
+                                                너무 만족하고 집들이 손님들도 이쁘다고 엄청 칭찬해주셨어요!! 다만 아쉬운거는 저렴한 견적에 진행을 하긴했지만 중간중간 변경되는
+                                                사항들에 대한 가격이 얼마인지,또 이것저것 추가금이 붙다보니 예상가격보다 많이나와서 좀 당황했어요,,, 여기는 1년 as도 된다고
+                                                하니 안심할 수 있는 업체에요 !
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="today_exh">
+                <div class="row">
+                    <div class="today_exh_title">
+                        <div class="today_exh_text">
+                            <h3>
+                                <a href="#">오늘의 기획전</a>
+                            </h3>
+                        </div>
+                        <div class="more">
+                            <div class="morecase">
+                                <a href="#">
+                                    <p>더보기</p>
+                                </a>
+                            </div>
+                            <div class="morearrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="today_exh_contents">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <div class="exh_flex_holder">
+                                        <div class="today_exh_img_container">
+                                            <div class="today_exh_img today_exh_img1"></div>
+                                        </div>
+                                        <div class="today_exh_detail">
+                                            <div class="today_exh_sub">
+                                                <p>
+                                                    전시, 반품, 스크래치 득템의 기회!
+                                                </p>
+                                            </div>
+                                            <div class="today_exh_main">
+                                                <h3>빠른 품절! 리퍼마켓 ~94%</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="exh_flex_holder">
+                                        <div class="today_exh_img_container">
+                                            <div class="today_exh_img today_exh_img2"></div>
+                                        </div>
+                                        <div class="today_exh_detail">
+                                            <div class="today_exh_sub">
+                                                <p id="cover">
+                                                    전상품 무료배송, 요일마다 바뀌는 파격특가 장보기!
+                                                </p>
+                                            </div>
+                                            <div class="today_exh_main">
+                                                <h3>
+                                                    물가안정 초특가 장보기! 오픈런-딜
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="exh_flex_holder">
+                                        <div class="today_exh_img_container">
+                                            <div class="today_exh_img today_exh_img3"></div>
+                                        </div>
+                                        <div class="today_exh_detail">
+                                            <div class="today_exh_sub">
+                                                <p>
+                                                    오늘의집 큐레이션 편집샵 오!굿즈
+                                                </p>
+                                            </div>
+                                            <div class="today_exh_main">
+                                                <h3>
+                                                    오직 여기서만, O!Goods
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="exh_flex_holder">
+                                        <div class="today_exh_img_container">
+                                            <div class="today_exh_img today_exh_img4"></div>
+                                        </div>
+                                        <div class="today_exh_detail">
+                                            <div class="today_exh_sub">
+                                                <p>
+                                                    최대 25만원 SAVE
+                                                </p>
+                                            </div>
+                                            <div class="today_exh_main">
+                                                <h3>
+                                                    0원한 특급패스, 오늘의집 배송!
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="best">
+                <div class="row">
+                    <div class="best_title">
+                        <div class="best_text">
+                            <h3>
+                                <a href="#">베스트</a>
+                            </h3>
+                        </div>
+                        <div class="more">
+                            <div class="morecase">
+                                <a href="#">
+                                    <p>더보기</p>
+                                </a>
+                            </div>
+                            <div class="morearrow">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="best_contents">
+                        <div class="best_cate">
+                            <ul>
+                                <li class="on">
+                                    <p>
+                                        전체
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        새학기 준비
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        가구
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        패브릭
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        가전&#183;디지털
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        주방용품
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        식품
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        데코&#183;식물
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        조명
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        수납&#183;정리
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        생활용품
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        생필품
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        유아&#183;아동
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        반려동물
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        캠핑&#183;레저
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        공구&#183;DIY
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="best_product">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <div class="best_img_container">
+                                            <div class="best_pr_img best_pr_img1">
+                                                <img src="./images/best1.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="best_pr_company">
+                                            아엠홈
+                                        </div>
+                                        <div class="best_pr_name">
+                                            [최대10%쿠폰+사은품][맞춤]비침없는 도톰 레이스/쉬폰커튼(나비주름/핀형/봉집)
+                                        </div>
+                                        <div class="info_price">
+                                            <span class="discount_rate">
+                                                28%
+                                            </span>
+                                            <span class="price">
+                                                16,800
+                                            </span>
+                                        </div>
+                                        <div class="info_rating">
+                                            <span class="star_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="star_rating">
+                                                4.7
+                                            </span>
+                                            <span class="review_count">
+                                                리뷰 32,621
+                                            </span>
+                                        </div>
+                                        <div class="info_start">
+                                            <div class="start_period"></div>
+                                            <p class="start_condition"></p>
+                                        </div>
+                                        <div class="info_special">
+                                            <span class="free_express">무료배송</span>
+                                            <span class="special_price">특가</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="best_img_container">
+                                            <div class="best_pr_img best_pr_img2">
+                                                <img src="./images/best2.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="best_pr_company">
+                                            퀵슬립
+                                        </div>
+                                        <div class="best_pr_name">
+                                            Q4 유로탑 롤팩 매트리스 2size
+                                        </div>
+                                        <div class="info_price">
+                                            <span class="discount_rate">
+                                                57%
+                                            </span>
+                                            <span class="price">
+                                                298,900
+                                            </span>
+                                        </div>
+                                        <div class="info_rating">
+                                            <span class="star_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="star_rating">
+                                                4.8
+                                            </span>
+                                            <span class="review_count">
+                                                리뷰 15,579
+                                            </span>
+                                        </div>
+                                        <div class="info_start">
+                                            <div class="start_period"></div>
+                                            <p class="start_condition"></p>
+                                        </div>
+                                        <div class="info_special">
+                                            <span class="free_express">무료배송</span>
+                                            <span class="special_price">특가</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <div class="best_pr_img best_pr_img3">
+                                            <img src="./images/best3.jpg" alt="">
+                                        </div>
+                                        <div class="best_pr_company">
+                                            헬로우슬립
+                                        </div>
+                                        <div class="best_pr_name">
+                                            [10%쿠폰]부드러운 카스테라 향균 옥수수솜 간절기/사계절/겨울 차렵이불세트
+                                        </div>
+                                        <div class="info_price">
+                                            <span class="discount_rate">
+                                                37%
+                                            </span>
+                                            <span class="price">
+                                                35,900
+                                            </span>
+                                        </div>
+                                        <div class="info_rating">
+                                            <span class="star_icon">
+                                                <i class="fa-solid fa-star"></i>
+                                            </span>
+                                            <span class="star_rating">
+                                                4.8
+                                            </span>
+                                            <span class="review_count">
+                                                리뷰 30,667
+                                            </span>
+                                        </div>
+                                        <div class="info_start">
+                                            <div class="start_period"></div>
+                                            <p class="start_condition"></p>
+                                        </div>
+                                        <div class="info_special">
+                                            <span class="free_express">무료배송</span>
+                                            <span class="special_price">특가</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div class="row">
+                <div class="customer_center">
+                    <div class="customer_center_title">
+                        <h3><a href="#">고객센터</a></h3>
+                    </div>
+                    <div class="customer_center_info">
+                        <span class="customer_PN"><a href="tel:1679-0876">1670-0876</a></span>
+                        <span class="op_time">09:00~18:00</span>
+                    </div>
+                    <div class="customer_week">
+                        <ul>
+                            <li>
+                                평일: 전체 문의 상담
+                            </li>
+                            <li>
+                                토요일, 공휴일: 오늘의집 직접배송, 이사/시공/제품설치 문의 상담
+                            </li>
+                            <li>
+                                일요일: 휴무
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="kakaotalk">
+                        <a href="#">
+                            <p>카톡 상담(평일 09:00~18:00)</p>
+                        </a>
+                    </div>
+                    <div class="email_inquiry">
+                        <a href="mailto:contact@bucketplace.com">
+                            <p>이메일 문의</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="detail_question">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                회사소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                입점신청
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                채용정보
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                제휴/광고 문의
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                이용약관
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                시공파트너안내
+                            </a>
+                        </li>
+                        <li class="check">
+                            <a href="#">
+                                개인정보 처리방침
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                상품광고 소개
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                공지사항
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                고객의 소리
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                안전거래센터
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="ad_info">
+                    <div class="company_ad_info">
+                        <div class="address">
+                            <span>(주)버킷플레이스</span><span class="line_stick">|</span>
+                            <span>대표이사 이승재</span><span class="line_stick">|</span>
+                            <span>
+                                <address>서울 서초구 서초대로74길 4 삼성생명서초타워 25층, 27층</address>
+                            </span>
+                        </div>
+                        <div class="business_info">
+                            <span><a href="mailto:contact@bucketplace.com">contact@bucketplace.com</a></span><span
+                                class="line_stick">|</span>
+                            <span>사업자등록번호 119-89-91245</span>
+                            <span class="check"><a href="#">사업자정보확인</a></span>
+                        </div>
+                        <div class="selling_number">
+                            <span>통신판매업신고번호 제2018-서울서초-0580호</span>
+                        </div>
+                    </div>
+                    <div class="safe_service">
+                        <span>고객님이 현금결제한 금액에 대해 우리은행과 채무지급보증 계약을 체결하여 안전거래를 보장하고 있습니다.</span>
+                        <span class="check"><a href="#">서비스가입사실확인</a></span>
+                    </div>
+                    <div class="today_mark">
+                        <div class="mark1">
+                            <div class="mark_img">
+                                <img src="./images/isms 인증 마크.png" alt="">
+                            </div>
+                            <div class="mark1_text">
+                                <h3>오늘의집 서비스 운영</h3>
+                                <p>2021.09. 08 ~ 2024. 09. 07</p>
+                            </div>
+                        </div>
+                        <div class="mark2">
+                            <div class="mark_img">
+                                <img src="./images/iso27001 인증 마크.png" alt="">
+                            </div>
+                        </div>
+                        <div class="mark3">
+                            <div class="mark_img">
+                                <img src="./images/pcr 인증 마크.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="warning">
+                        <p>(주)버킷플레이스는 통신판매중개자로 거래 당사자가 아니므로, 판매자가 등록한 상품정보 및 거래 등에 대해 책임을 지지 않습니다. 단, (주)버킷플레이스가 판매자로 등록
+                            판매한
+                            상품은 판매자로서 책임을 부담합니다.</p>
+                    </div>
+                    <div class="sns">
+                        <span><a href="#"><i class="fa-brands fa-youtube"></i></a></span>
+                        <span><a href="#"><i class="fa-brands fa-instagram"></i></a></span>
+                        <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+                    </div>
+                    <div class="copyright">
+                        <p>Copyright 2014. bucketplace, Co., Ltd. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(".main_slide_inner").slick({
+                autoplaySpeed: 4000,
+                speed: 300,
+                autoplay: true,
+                dots: false,
+                arrows: false,
+                prevArrow:
+                    '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa-solid fa-chevron-left"></i></button>',
+                nextArrow:
+                    '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button>'
+            });
+            var reviewElements = document.querySelectorAll('.interior_user_review');
+            var maxChars = 150; // 최대 글자 수
+
+            reviewElements.forEach(function (element) {
+                if (element.textContent.length > maxChars) {
+                    var truncatedText = element.textContent.slice(0, maxChars) + '...';
+                    element.textContent = truncatedText;
+                }
+            });
+            $(document).ready(function () {
+                $('.popular_slide_inner').slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 2000,
+                    vertical: true,
+                    dots: false,
+                    arrows: false,
+                });
+            });
+
+            $(".basic_cate ul li")
+                .on("click", function () {
+                    $(this).addClass("on").siblings().removeClass("on")
+                    let num = $(this).index();
+                    $(this)
+                        .parent()
+                        .find("li")
+                        .eq(num)
+                        .addClass("on")
+                        .siblings()
+                        .removeClass("on");
+                })
+
+            $("ul.community li")
+                .on("click", function () {
+                    $(this).addClass("on").siblings().removeClass("on")
+                    let num = $(this).index();
+                    $(this)
+                        .parent()
+                        .find("li")
+                        .eq(num)
+                        .addClass("on")
+                        .siblings()
+                        .removeClass("on");
+                })
+
+            $(".best_cate ul li")
+                .on("click", function () {
+                    $(this).addClass("on").siblings().removeClass("on")
+                    let num = $(this).index();
+                    $(this)
+                        .parent()
+                        .find("li")
+                        .eq(num)
+                        .addClass("on")
+                        .siblings()
+                        .removeClass("on");
+            })
+            $(document).ready(function(){
+            $('.any').on("click", function(){
+            $('.depth2').not($(this).next('.depth2')).stop().slideUp(300);
+            // 클릭한 .depth2를 열거나 닫음
+            $(this).next('.depth2').stop().slideToggle(300);
+            // 다른 .any에서 .on 클래스를 제거
+            $('.any').not(this).removeClass('on');
+            // 클릭한 .any에게 .on 클래스를 토글
+            $(this).toggleClass('on');
+            });
+            });
+            $('ul.depth2 > li')
+            .on("click", function(){
+            $(this).addClass("on").siblings().removeClass("on")
+            })
+
+            $('ul.community li.pet').on("click", function () {
+                $('ul.minicate').fadeToggle(150)
+            })
+
+            $('span.chevron_down_2').hover(function () {
+                $('ul.rank_full').fadeToggle(300)
+            })
+
+            $(".writing").on("click", function () {
+                $('.writing ul').fadeToggle(150)
+            })
+            $('.row1 .bar').on("click", function () {
+                $('.bar_click').fadeIn(150)
+                $('.bar_click').addClass("on")
+                $('.darkbg').addClass("on")
+            })
+            $('.return_btn').on("click", function () {
+                $('.bar_click').fadeOut(150)
+                $('.darkbg').removeClass("on")
+            })
+            //휠내릴때
+            $(document).on('wheel', function (event) {
+                if (event.originalEvent.deltaY > 0) {
+                    $("#nav").removeClass('on');
+                } else { // 휠 올릴 때
+                    $("#nav").addClass('on');
+                }
+            });
+            $(document).on('wheel', function (event) {
+                // 현재 스크롤 높이
+                let scrollHeight = $(document).scrollTop();
+
+                // 휠 이벤트에 대한 작업 수행 조건
+                if (scrollHeight === 0) {
+                    // 스크롤 높이가 0일 때만 휠 이벤트 처리
+                    $("#nav").removeClass('on');
+                } else {
+                    // 스크롤 높이가 0이 아닐 때 휠 이벤트의 기본 동작 막기
+                    event.preventDefault();
+                }
+            });
+        </script>
+    </body>
+
+</html>
