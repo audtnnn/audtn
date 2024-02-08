@@ -19,7 +19,6 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
             integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./js/port.js"></script>
     </head>
 
 
@@ -2265,134 +2264,7 @@
                 </div>
             </div>
         </div>
-        <script>
-            $(".main_slide_inner").slick({
-                autoplaySpeed: 4000,
-                speed: 300,
-                autoplay: true,
-                dots: false,
-                arrows: false,
-                prevArrow:
-                    '<button class="slick-prev slick-arrow" aria-label="Previous" type="button"><i class="fa-solid fa-chevron-left"></i></button>',
-                nextArrow:
-                    '<button class="slick-next slick-arrow" aria-label="Next" type="button"><i class="fa-solid fa-chevron-right"></i></button>'
-            });
-            var reviewElements = document.querySelectorAll('.interior_user_review');
-            var maxChars = 150; // 최대 글자 수
-
-            reviewElements.forEach(function (element) {
-                if (element.textContent.length > maxChars) {
-                    var truncatedText = element.textContent.slice(0, maxChars) + '...';
-                    element.textContent = truncatedText;
-                }
-            });
-            $(document).ready(function () {
-                $('.popular_slide_inner').slick({
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    autoplay: true,
-                    autoplaySpeed: 2000,
-                    vertical: true,
-                    dots: false,
-                    arrows: false,
-                });
-            });
-
-            $(".basic_cate ul li")
-                .on("click", function () {
-                    $(this).addClass("on").siblings().removeClass("on")
-                    let num = $(this).index();
-                    $(this)
-                        .parent()
-                        .find("li")
-                        .eq(num)
-                        .addClass("on")
-                        .siblings()
-                        .removeClass("on");
-                })
-
-            $("ul.community li")
-                .on("click", function () {
-                    $(this).addClass("on").siblings().removeClass("on")
-                    let num = $(this).index();
-                    $(this)
-                        .parent()
-                        .find("li")
-                        .eq(num)
-                        .addClass("on")
-                        .siblings()
-                        .removeClass("on");
-                })
-
-            $(".best_cate ul li")
-                .on("click", function () {
-                    $(this).addClass("on").siblings().removeClass("on")
-                    let num = $(this).index();
-                    $(this)
-                        .parent()
-                        .find("li")
-                        .eq(num)
-                        .addClass("on")
-                        .siblings()
-                        .removeClass("on");
-            })
-            $(document).ready(function(){
-            $('.any').on("click", function(){
-            $('.depth2').not($(this).next('.depth2')).stop().slideUp(300);
-            $(this).next('.depth2').stop().slideToggle(300);
-            $('.any').not(this).removeClass('on');
-            $(this).toggleClass('on');
-            });
-            });
-            $('ul.depth2 > li')
-            .on("click", function(){
-            $(this).addClass("on").siblings().removeClass("on")
-            })
-
-            $('ul.community li.pet').on("click", function () {
-                $('ul.minicate').fadeToggle(150)
-            })
-
-            $('span.chevron_down_2').hover(function () {
-                $('ul.rank_full').fadeToggle(300)
-            })
-
-            $(".writing").on("click", function () {
-                $('.writing ul').fadeToggle(150)
-            })
-            $('.row1 .bar').on("click", function () {
-                $('.bar_click').fadeIn(150)
-                $('.bar_click').addClass("on")
-                $('.darkbg').addClass("on")
-                $('.depth1 li').eq(0).find(".depth2").show()
-            })
-            $('.return_btn').on("click", function () {
-                $('.bar_click').fadeOut(150)
-                $('.darkbg').removeClass("on")
-                $('.depth2').slideUp()
-            })
-            //휠내릴때
-            $(document).on('wheel', function (event) {
-                if (event.originalEvent.deltaY > 0) {
-                    $("#nav").removeClass('on');
-                } else { // 휠 올릴 때
-                    $("#nav").addClass('on');
-                }
-            });
-            $(document).on('wheel', function (event) {
-                // 현재 스크롤 높이
-                let scrollHeight = $(document).scrollTop();
-
-                // 휠 이벤트에 대한 작업 수행 조건
-                if (scrollHeight === 0) {
-                    // 스크롤 높이가 0일 때만 휠 이벤트 처리
-                    $("#nav").removeClass('on');
-                } else {
-                    // 스크롤 높이가 0이 아닐 때 휠 이벤트의 기본 동작 막기
-                    event.preventDefault();
-                }
-            });
-        </script>
+    <script src="./js/port.js"></script>
     </body>
 
 </html>
